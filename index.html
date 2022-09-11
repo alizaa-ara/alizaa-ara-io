@@ -1,9 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>My blog</title>
-  <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  </head>
+  <body id="root">
+    <nav class="navbar">
+      <a href="./index.html">Home</a>
+      <div class="navbar--dropdown">
+        <a href="./blog/blog.html" class="navbar--dropdown-button">Blog</a>
+        <div class="navbar--dropdown-content">
+          <a href="./blog/identity-values.html">Sprint 1 - Identity, Values and Strengths</a>
+          <a href="./blog/learning-plan.html">Sprint 2 - Learning Plan</a>
+          <a href="./blog/html-css.html">Sprint 2 - IDs and Classes</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="heading">
+      <h1>Alizaa Ara</h1>
+      <h2>My Dev Academy Journey</h2>
+    </div>
+
+    <div class="home">
+      <h2>About Me</h2>
+      <p>
+        In order to stay true to myself and my story, I cannot begin this
+        without mentioning my hardships. I come from an underprivelaged
+        background where my ancestors experienced cultural displacement,
+        religious wars, and trauma for generations. They survived with scars
+        that cannot be seen or measured. These scars were passed on to me
+        through violence, neglect, and abuse.
+      </p>
+      <p>
+        Breaking the cycle of generational suffering has come with its own
+        challenges. Being born in this reality drives my passion for uplifting
+        marginalised communities, equity, and for mental health awareness. I
+        studied Gender Studies and Psychology at The University of Auckland and
+        worked in the Mental Health space for over 7 years.
+      </p>
+      <p>
+        One day, I realised that supporting rangatahi in an industry that was
+        not supporting me while I sacrificed my need for a better quality of
+        life is also an aspect of that old cycle for me. I decided to pursue
+        something that breaks through internalised ideas regarding my
+        capabilities while also enhancing my quality of life- Software
+        Development!
+      </p>
+      <p>
+        Apart from having a never-ending exestential crisis and hating on
+        Capitalism, I like to do:
+      </p>
+      <div class="home--container">
+        <div class="home--activity">
+          <img src="./assets/gardening.jpeg" alt="My garden" />
+          <span>Gardening</span>
+        </div>
+        <div class="home--activity">
+          <img src="./assets/knitting.jpeg" alt="Knitting a scarf" />
+          <span>Knitting!</span>
+        </div>
+        <div class="home--activity">
+          <video controls>
+            <source src="./assets/mma.mp4" type="video/mp4" />
+          </video>
+          <span>MMA Training</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
