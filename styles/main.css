@@ -78,8 +78,13 @@
 
 /* Home */
 .home > h2,
+.home > h3,
 .home > p {
   text-align: center;
+}
+
+.home > h3 {
+  display: none;
 }
 
 .home > p {
@@ -101,6 +106,24 @@
 .home--activity > img,
 .home--activity > video {
   width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home > h2 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home--container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .home > h3 {
+    display: block;
+  }
 }
 
 /* Blog */
@@ -171,9 +194,8 @@
   width: 50vw;
 }
 
-@media only screen and (max-width: 768px) {
-  /* Home */
-  .home--container {
-    flex-direction: column;
-  }
+/* Javascript/DOM */
+.javascript-dom img {
+  min-width: 200px;
+  max-width: 500px;
 }
