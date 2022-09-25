@@ -199,3 +199,8 @@
   min-width: 200px;
   max-width: 500px;
 }
+
+/* Problem Solving */
+.problem-solving li {
+  margin-bottom: 10px;
+}
